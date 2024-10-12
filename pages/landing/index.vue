@@ -3,6 +3,14 @@ import { ref, onMounted } from "vue";
 
 import card from "@/components/card.vue";
 
+/* set head using NUXT method in script for this page */
+useHead({
+  title: "FishCampLLC | Landing Page",
+  meta: [
+    { name: "description", content: "Welcome to FishCampLLC Landing Page" },
+  ],
+});
+
 //store page heading
 const pageHeading = ref("Customer Experience Slideshow");
 

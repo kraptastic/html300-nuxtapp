@@ -1,5 +1,17 @@
 <script setup>
 import { ref } from "vue";
+
+/* set head using NUXT method in script for this page */
+useHead({
+  title: "FishCampLLC | Image Gallery",
+  meta: [
+    {
+      name: "description",
+      content: "Welcome to FishCampLLC Gallery of Trip Images",
+    },
+  ],
+});
+
 // store card/image locations, alt ids, in object
 const cardDetails = ref([
   {

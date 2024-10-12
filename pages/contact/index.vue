@@ -1,6 +1,14 @@
 <script setup>
 import { ref } from "vue";
 
+/* set head using NUXT method in script for this page */
+useHead({
+  title: "FishCampLLC | Contact Us",
+  meta: [
+    { name: "description", content: "Welcome to FishCampLLC Contact Us Page" },
+  ],
+});
+
 // store reflected variable for show/hide of contact form in template
 const show = ref(false);
 

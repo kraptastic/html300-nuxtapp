@@ -4,6 +4,17 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   app: {
     head: {
+      htmlAttrs: {
+        lang: "en",
+      },
+      title: "FishCamp Guided Fishing Tours PNW USA",
+      meta: [
+        {
+          name: "description",
+          content:
+            "We provide chartered fishing trips with experienced guides in the PNW",
+        },
+      ],
       link: [
         {
           rel: "stylesheet",

@@ -1,5 +1,13 @@
 <script setup>
 import { ref } from "vue";
+
+/* set head using NUXT method in script for this page */
+useHead({
+  title: "FishCampLLC | FAQ Page",
+  meta: [{ name: "description", content: "Welcome to FishCampLLC FAQ Page" }],
+});
+v;
+
 //store header and <p> values
 const accordionHeader = ref("Browse Frequently Asked Questions");
 const accordionParagraph = ref("Try inputting a CSS or bootstrap class");
